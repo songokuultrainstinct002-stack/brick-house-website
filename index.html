@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BRICK HOUSE — Family Restaurant | New Balmatta Rd, Mangaluru</title>
+<meta name="description" content="BRICK HOUSE Family Restaurant in Bendoor, Mangaluru. Dine-in, Takeaway, No-contact delivery. 4.2 ★ (3,984 reviews). New Balmatta Rd, Bendoor, Karnataka 575001."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
+<script>
+tailwind.config={
+  theme:{
+    extend:{
+      colors:{
+        gold:'#C9A86A',
+        goldLight:'#E8D9B8',
+        goldDark:'#8C7040',
+        charcoal:'#131313',
+        warmblack:'#0A0A0A',
+        brick:'#7B2E1F',
+        brickLight:'#9E3A26',
+        stone:'#1C1C1C',
+        stone2:'#222222'
+      },
+      fontFamily:{
+        serif:['Cormorant Garamond','serif'],
+        sans:['Inter','sans-serif'],
+        display:['Instrument Serif','serif']
+      }
+    }
+  }
+}
+</script>
+<style>
+*{scroll-behavior:smooth}
+body{background:#0A0A0A;color:#F5F1E8;font-family:'Inter',sans-serif;overflow-x:hidden}
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-track{background:#0A0A0A}
+::-webkit-scrollbar-thumb{background:#3a2a1a;border-radius:99px}
+.glass{background:rgba(20,20,20,0.55);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(201,168,106,0.12)}
+.glass-strong{background:rgba(18,18,18,0.78);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(201,168,106,0.14)}
+.gold-line{background:linear-gradient(90deg,transparent,#C9A86A,transparent);height:1px;opacity:0.5}
+.text-gold-gradient{background:linear-gradient(135deg,#E8C99A 0%,#C9A86A 45%,#8C7040 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-overlay{background:linear-gradient(180deg,rgba(10,10,10,0.35) 0%,rgba(10,10,10,0.55) 35%,rgba(10,10,10,0.88) 75%,#0A0A0A 100%), linear-gradient(90deg,rgba(10,10,10,0.72) 0%,rgba(10,10,10,0.15) 58%)}
+.shimmer{position:relative;overflow:hidden}
+.shimmer::after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,0.06) 50%,transparent 70%);transform:translateX(-100%);transition:transform 0.9s}
+.shimmer:hover::after{transform:translateX(100%)}
+.reveal{opacity:0;transform:translateY(18px);transition:all 0.8s cubic-bezier(0.16,1,0.3,1)}
+.reveal.in{opacity:1;transform:none}
+.editable-badge{border:1px dashed rgba(201,168,106,0.35);background:rgba(201,168,106,0.06)}
+.map-pattern{background-image:radial-gradient(rgba(201,168,106,0.12) 1px, transparent 1px);background-size:22px 22px}
+@media(max-width:768px){.hero-overlay{background:linear-gradient(180deg,rgba(10,10,10,0.45) 0%,rgba(10,10,10,0.72) 50%,#0A0A0A 92%)}}
+</style>
+</head>
+<body class="antialiased selection:bg-gold selection:text-black">
+<!-- NAV -->
+<nav id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-500 border-b border-white/[0.06]">
+  <div class="absolute inset-0 bg-[#0A0A0A]/70 backdrop-blur-xl"></div>
+  <div class="relative max-w-[1280px] mx-auto px-6 lg:px-8 h-[76px] flex items-center justify-between">
+    <a href="#" class="flex items-center gap-4 group">
+      <div class="w-10 h-10 rounded-[10px] bg-gradient-to-br from-[#C9A86A] to-[#8C7040] flex items-center justify-center text-black font-serif font-bold text-[18px] tracking-widest">B</div>
+      <div>
+        <div class="font-serif text-[18px] tracking-[0.22em] font-semibold leading-none">BRICK HOUSE</div>
+        <div class="text-[9px] tracking-[0.28em] text-gold/80 font-medium mt-[2px]">FAMILY RESTAURANT • MANGALURU</div>
+      </div>
+    </a>
+    <div class="hidden lg:flex items-center gap-8 text-[12.5px] tracking-[0.14em] font-medium text-white/70">
+      <a href="#about" class="hover:text-gold transition">ABOUT</a>
+      <a href="#gallery" class="hover:text-gold transition">GALLERY</a>
+      <a href="#menu" class="hover:text-gold transition">MENU</a>
+      <a href="#reviews" class="hover:text-gold transition">REVIEWS</a>
+      <a href="#location" class="hover:text-gold transition">LOCATION</a>
+    </div>
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="tel:08244277788" class="h-10 px-5 rounded-full border border-white/15 text-xs tracking-widest font-semibold hover:bg-white hover:text-black transition flex items-center gap-2">
+        <i class="ri-phone-line"></i> 0824 427 7788
+      </a>
+      <a href="#reserve" class="h-10 px-6 rounded-full bg-gold text-black text-xs tracking-[0.14em] font-bold hover:bg-goldLight transition flex items-center">RESERVE</a>
+    </div>
+    <button id="menuBtn" class="lg:hidden w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-white"><i class="ri-menu-line text-xl"></i></button>
+  </div>
+  <div id="mobileMenu" class="lg:hidden hidden absolute top-[76px] inset-x-0 bg-[#0F0F0F] border-b border-white/10">
+    <div class="px-6 py-6 flex flex-col gap-4 text-sm tracking-widest text-white/80">
+      <a href="#about" class="py-2 border-b border-white/5">ABOUT</a>
+      <a href="#gallery" class="py-2 border-b border-white/5">GALLERY</a>
+      <a href="#menu" class="py-2 border-b border-white/5">MENU</a>
+      <a href="#reviews" class="py-2 border-b border-white/5">REVIEWS</a>
+      <a href="#location" class="py-2 border-b border-white/5">LOCATION</a>
+      <a href="#reserve" class="mt-2 h-11 rounded-full bg-gold text-black font-bold tracking-widest flex items-center justify-center">RESERVE A TABLE</a>
+      <a href="tel:08244277788" class="h-11 rounded-full border border-white/15 flex items-center justify-center gap-2"><i class="ri-phone-line"></i> CALL NOW</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="relative min-h-[100vh] flex items-end lg:items-center overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80" alt="Brick House exterior placeholder" class="w-full h-full object-cover"/>
+    <div class="hero-overlay absolute inset-0"></div>
+    <div class="absolute inset-0 opacity-[0.07]" style="background-image:url('https://www.transparenttextures.com/patterns/brick-wall.png')"></div>
+  </div>
+  <!-- Editable label -->
+  <div class="absolute top-[90px] left-1/2 -translate-x-1/2 lg:left-8 lg:translate-x-0 z-20">
+    <div class="editable-badge text-[10px] tracking-[0.18em] text-goldLight px-3 py-1.5 rounded-full flex items-center gap-2">
+      <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span> EDITABLE HERO IMAGE — Replace with Brick House exterior photograph
+    </div>
+  </div>
+
+  <div class="relative z-10 w-full max-w-[1280px] mx-auto px-6 lg:px-8 pb-10 lg:pb-0 pt-32 lg:pt-24 grid lg:grid-cols-[1.15fr_0.85fr] gap-10 items-center">
+    <!-- Left -->
+    <div class="reveal in">
+      <div class="inline-flex items-center gap-3 mb-6">
+        <span class="h-px w-8 bg-gold"></span>
+        <span class="text-gold text-[11px] tracking-[0.32em] font-semibold">NEW BALMATTA RD • BENDOOR</span>
+        <span class="hidden sm:inline-flex items-center gap-1.5 text-[11px] tracking-widest text-white/60"><span class="w-1 h-1 rounded-full bg-emerald-400"></span> OPEN · CLOSES 10:30 PM</span>
+      </div>
+      <h1 class="font-serif font-light leading-[0.88] tracking-[-0.03em]">
+        <span class="block text-white text-[56px] sm:text-[78px] lg:text-[96px]">BRICK</span>
+        <span class="block text-gold-gradient text-[56px] sm:text-[78px] lg:text-[96px] -mt-2">HOUSE</span>
+      </h1>
+      <div class="mt-4 flex items-center gap-3">
+        <div class="h-px w-10 bg-gold/60"></div>
+        <p class="font-display italic text-[20px] lg:text-[24px] text-white/90 tracking-wide">Family Restaurant</p>
+        <span class="hidden sm:inline text-white/25">—</span>
+        <span class="hidden sm:inline text-xs tracking-[0.2em] text-white/60">SINCE • MANGALURU</span>
+      </div>
+      <p class="mt-6 max-w-[520px] text-[14px] leading-6 text-white/70">
+        Warm brick, soft light, and familiar flavours. A welcoming place on New Balmatta Road for families, friends and unhurried meals.
+      </p>
+
+      <!-- Info row -->
+      <div class="mt-7 flex flex-wrap gap-3">
+        <div class="glass rounded-full px-4 py-2.5 flex items-center gap-3 text-xs">
+          <span class="w-7 h-7 rounded-full bg-white text-black flex items-center justify-center"><i class="ri-map-pin-line"></i></span>
+          <span class="text-white/90 leading-tight">New Balmatta Rd, Bendoor,<br/><span class="text-white/60">Mangaluru, Karnataka 575001</span></span>
+        </div>
+        <div class="glass rounded-full px-4 py-2.5 flex items-center gap-3">
+          <span class="w-7 h-7 rounded-full bg-gold text-black flex items-center justify-center text-[13px] font-bold">4.2</span>
+          <div class="leading-tight">
+            <div class="flex text-gold text-[11px]"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-fill"></i></div>
+            <div class="text-[11px] text-white/70">3,984 Google reviews</div>
+          </div>
+        </div>
+        <div class="hidden sm:flex glass rounded-full px-4 py-2.5 items-center gap-2 text-xs text-white/80">
+          <i class="ri-wallet-3-line text-gold"></i> ₹200–1,000 <span class="text-white/40">per person</span>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#menu" class="h-[48px] px-7 rounded-full bg-gold text-black text-[12.5px] tracking-[0.16em] font-bold hover:bg-goldLight transition flex items-center gap-2 shimmer">
+          EXPLORE MENU <i class="ri-arrow-right-line"></i>
+        </a>
+        <a href="#reserve" class="h-[48px] px-7 rounded-full bg-white text-black text-[12.5px] tracking-[0.16em] font-bold hover:bg-white/90 transition flex items-center gap-2">
+          <i class="ri-calendar-line"></i> RESERVE A TABLE
+        </a>
+        <a href="https://www.google.com/maps/search/?api=1&query=New+Balmatta+Rd+Bendoor+Mangaluru+Karnataka+575001" target="_blank" class="h-[48px] px-7 rounded-full border border-white/20 text-white text-[12.5px] tracking-[0.16em] font-semibold hover:bg-white hover:text-black transition flex items-center gap-2">
+          <i class="ri-navigation-line"></i> GET DIRECTIONS
+        </a>
+      </div>
+
+      <div class="mt-6 flex items-center gap-4 text-[10px] tracking-[0.18em] text-white/45">
+        <span class="flex items-center gap-1.5"><i class="ri-restaurant-line"></i> DINE-IN</span>
+        <span class="w-1 h-1 rounded-full bg-white/20"></span>
+        <span class="flex items-center gap-1.5"><i class="ri-takeaway-line"></i> TAKEAWAY</span>
+        <span class="w-1 h-1 rounded-full bg-white/20"></span>
+        <span class="flex items-center gap-1.5"><i class="riEBike2-line"></i> NO-CONTACT DELIVERY</span>
+      </div>
+    </div>
+
+    <!-- Right Glass Card -->
+    <div class="reveal in lg:justify-self-end w-full max-w-[420px]">
+      <div class="glass-strong rounded-[28px] p-6 sm:p-7 relative overflow-hidden">
+        <div class="absolute -top-20 -right-20 w-56 h-56 rounded-full bg-gold/10 blur-3xl"></div>
+        <div class="flex items-center justify-between mb-5">
+          <div class="text-[11px] tracking-[0.2em] text-gold font-semibold">AT A GLANCE</div>
+          <div class="text-[11px] tracking-widest bg-emerald-500 text-white px-3 py-1 rounded-full font-bold flex items-center gap-1"><span class="w-2 h-2 bg-white rounded-full animate-pulse"></span> OPEN NOW</div>
+        </div>
+        <div class="space-y-4 text-sm">
+          <div class="flex justify-between py-3 border-b border-white/10">
+            <span class="text-white/50 flex items-center gap-2"><i class="ri-time-line text-gold"></i> Hours</span>
+            <span class="text-white font-medium">Open · Closes 10:30 PM</span>
+          </div>
+          <div class="flex justify-between py-3 border-b border-white/10">
+            <span class="text-white/50 flex items-center gap-2"><i class="ri-money-rupee-circle-line text-gold"></i> Price</span>
+            <span class="text-white font-medium">₹200 – ₹1,000 <span class="text-white/50 text-xs">pp</span></span>
+          </div>
+          <div class="flex justify-between py-3 border-b border-white/10">
+            <span class="text-white/50 flex items-center gap-2"><i class="ri-map-pin-2-line text-gold"></i> Plus Code</span>
+            <span class="text-white font-medium">VR9X+F5 Mangaluru</span>
+          </div>
+          <div class="flex justify-between py-3">
+            <span class="text-white/50 flex items-center gap-2"><i class="ri-group-line text-gold"></i> Reported</span>
+            <span class="text-white font-medium">133 people</span>
+          </div>
+        </div>
+        <div class="mt-6 grid grid-cols-2 gap-3">
+          <a href="tel:08244277788" class="h-11 rounded-full bg-white text-black font-bold text-xs tracking-widest flex items-center justify-center gap-1.5 hover:bg-gold transition"><i class="ri-phone-fill"></i> CALL NOW</a>
+          <a href="#location" class="h-11 rounded-full border border-white/15 text-white font-semibold text-xs tracking-widest flex items-center justify-center gap-1.5 hover:bg-white hover:text-black transition"><i class="ri-map-2-line"></i> VIEW MAP</a>
+        </div>
+        <div class="mt-4 flex items-center justify-center gap-2 text-[11px] text-white/50">
+          <i class="ri-information-line text-gold"></i> Displayed status & price as reported on Google
+        </div>
+      </div>
+      <div class="hidden lg:flex mt-4 items-center gap-2 text-[10px] tracking-[0.18em] text-white/35 justify-center">
+        <span>SCROLL</span><span class="h-px w-10 bg-white/20"></span><i class="ri-mouse-line"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="border-y border-white/[0.06] bg-[#0F0F0F]">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8 h-[64px] flex items-center justify-between gap-6 overflow-x-auto">
+    <div class="flex items-center gap-3 shrink-0">
+      <span class="w-8 h-8 rounded-full bg-white flex items-center justify-center"><i class="ri-google-fill text-black"></i></span>
+      <div class="leading-tight">
+        <div class="text-sm font-bold flex items-center gap-1">4.2 <span class="text-gold flex text-xs"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-fill"></i></span></div>
+        <div class="text-[11px] text-white/50">3,984 reviews — exactly as on Google</div>
+      </div>
+    </div>
+    <div class="hidden md:flex items-center gap-8 text-xs tracking-widest text-white/45">
+      <span class="flex items-center gap-2"><i class="ri-shield-check-line text-gold"></i> VERIFIED LISTING</span>
+      <span class="flex items-center gap-2"><i class="ri-award-line text-gold"></i> FAMILY RESTAURANT</span>
+      <span class="flex items-center gap-2"><i class="ri-leaf-line text-gold"></i> DINE-IN • TAKEAWAY • DELIVERY</span>
+    </div>
+    <div class="hidden lg:flex items-center gap-2 text-[11px] tracking-widest text-white/60 shrink-0">
+      <span>VR9X+F5</span><span class="w-1 h-1 rounded-full bg-white/20"></span><span>0824 427 7788</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="bg-[#0F0F0F] py-20 lg:py-28">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-16 items-start">
+      <!-- Images -->
+      <div class="relative reveal">
+        <div class="rounded-[32px] overflow-hidden border border-white/10 relative aspect-[1.15/1] lg:aspect-[1.05/1]">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80" alt="Restaurant interior placeholder" class="w-full h-full object-cover"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          <div class="absolute top-4 left-4 editable-badge text-[10px] tracking-widest text-goldLight px-3 py-1.5 rounded-full">EDITABLE — Replace with Brick House interior / exterior</div>
+          <div class="absolute bottom-4 left-4 right-4 glass rounded-2xl p-4 flex items-center gap-4">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=200&q=80" class="w-16 h-16 rounded-xl object-cover border border-white/20"/>
+            <div>
+              <div class="text-xs tracking-widest text-gold font-semibold">BRICK HOUSE</div>
+              <div class="text-sm text-white font-medium">Warm, welcoming & unpretentious</div>
+              <div class="text-xs text-white/60">Family restaurant • Mangaluru</div>
+            </div>
+          </div>
+        </div>
+        <!-- floating card -->
+        <div class="absolute -bottom-6 -right-2 sm:right-4 glass-strong rounded-2xl p-4 flex items-center gap-3 shadow-2xl">
+          <div class="w-12 h-12 rounded-xl bg-gold text-black flex items-center justify-center"><i class="ri-home-5-line text-xl"></i></div>
+          <div>
+            <div class="text-sm font-bold">Family Restaurant</div>
+            <div class="text-xs text-white/60">Category — verified</div>
+          </div>
+        </div>
+      </div>
+      <!-- Content -->
+      <div class="reveal lg:pt-4">
+        <div class="text-gold text-[11px] tracking-[0.3em] font-semibold flex items-center gap-3"><span class="w-8 h-px bg-gold"></span> ABOUT BRICK HOUSE</div>
+        <h2 class="font-serif text-[38px] lg:text-[48px] leading-[0.9] mt-3">A neighbourhood<br/><span class="text-gold italic font-light">favourite,</span> made<br/>for everyone.</h2>
+        <div class="gold-line my-6 max-w-[320px]"></div>
+
+        <div class="grid sm:grid-cols-3 gap-3 mb-6">
+          <div class="glass rounded-2xl p-4">
+            <div class="text-[11px] tracking-widest text-white/50">RESTAURANT</div>
+            <div class="font-semibold text-white mt-1">Brick House</div>
+            <div class="text-xs text-white/60">Verified name</div>
+          </div>
+          <div class="glass rounded-2xl p-4">
+            <div class="text-[11px] tracking-widest text-white/50">CATEGORY</div>
+            <div class="font-semibold text-white mt-1">Family restaurant</div>
+            <div class="text-xs text-white/60">As listed</div>
+          </div>
+          <div class="glass rounded-2xl p-4">
+            <div class="text-[11px] tracking-widest text-white/50">PRICE RANGE</div>
+            <div class="font-semibold text-white mt-1">₹200 – ₹1,000</div>
+            <div class="text-xs text-white/60">Per person</div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="px-4 py-2 rounded-full bg-white text-black text-xs font-semibold flex items-center gap-1.5"><i class="ri-restaurant-2-line"></i> Dine-in</span>
+          <span class="px-4 py-2 rounded-full border border-white/15 text-white text-xs font-semibold flex items-center gap-1.5"><i class="ri-shopping-bag-line"></i> Takeaway</span>
+          <span class="px-4 py-2 rounded-full border border-white/15 text-white text-xs font-semibold flex items-center gap-1.5"><i class="ri-bike-line"></i> No-contact delivery</span>
+          <span class="px-3 py-2 rounded-full editable-badge text-goldLight text-xs">Verified services only</span>
+        </div>
+
+        <!-- Editable story placeholder -->
+        <div class="rounded-[20px] border border-dashed border-gold/25 bg-gold/[0.04] p-6">
+          <div class="flex items-center gap-2 text-gold text-xs tracking-[0.18em] font-semibold mb-3"><i class="ri-edit-box-line"></i> EDITABLE PLACEHOLDER — Restaurant Story & Introduction</div>
+          <p class="text-sm leading-6 text-white/60">
+            This area is intentionally left editable. Add your authentic story, philosophy, and welcome note here. <span class="text-white/80">Do not invent brand history</span> — use only verified information. Replace this text with your own introduction when ready.
+          </p>
+          <div class="mt-4 h-10 rounded-full border border-dashed border-white/15 flex items-center justify-center text-xs tracking-widest text-white/40">+ ADD YOUR STORY HERE (contenteditable)</div>
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#gallery" class="px-6 h-10 rounded-full bg-gold text-black text-xs font-bold tracking-widest flex items-center gap-2">VIEW FOOD GALLERY</a>
+          <a href="#location" class="px-6 h-10 rounded-full border border-white/15 text-white text-xs font-semibold tracking-widest flex items-center gap-2"><i class="ri-map-pin-line"></i> GET DIRECTIONS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="bg-[#0A0A0A] py-20 lg:py-28 border-t border-white/[0.06]">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-8 reveal">
+      <div>
+        <div class="text-gold text-[11px] tracking-[0.3em] font-semibold flex items-center gap-3"><span class="w-8 h-px bg-gold"></span> FOOD GALLERY</div>
+        <h2 class="font-serif text-[36px] lg:text-[52px] leading-none mt-3">An editorial<br/><span class="italic text-gold font-light">taste of Brick House.</span></h2>
+      </div>
+      <div class="max-w-[420px]">
+        <p class="text-sm text-white/60 leading-6">All 12 supplied photographs displayed in an asymmetric editorial grid. Hover to preview, click to view full-screen. Captions are fully editable — dish names are not invented.</p>
+        <div class="mt-3 inline-flex items-center gap-2 text-[11px] tracking-widest text-goldLight editable-badge px-3 py-1.5 rounded-full">12 PHOTOS • ROUNDED CORNERS • FULL-SCREEN VIEW</div>
+      </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-12 gap-4 lg:gap-5 auto-rows-[180px] lg:auto-rows-[220px]">
+      <!-- 1 chocolate dessert with ice cream -->
+      <div class="col-span-12 sm:col-span-6 lg:col-span-5 row-span-1 lg:row-span-2 group relative rounded-[24px] overflow-hidden cursor-pointer" onclick="openLightbox(0)">
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=900&q=80" class="w-full h-full object-cover group-hover:scale-[1.06] transition duration-700"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+        <div class="absolute top-3 left-3 editable-badge text-[10px] tracking-widest px-2.5 py-1 rounded-full text-white/90">01 • EDITABLE</div>
+        <div class="absolute bottom-0 inset-x-0 p-5">
+          <div class="text-white font-semibold text-sm">Photo 01 — chocolate dessert with ice cream</div>
+          <div class="text-goldLight text-xs editable-badge inline-block mt-1 px-2 py-1 rounded-full">Editable caption — add description</div>
+        </div>
+        <div class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/90 backdrop-blur text-black flex items-center justify-center opacity-0 group-hover:opacity-100 transition"><i class="ri-expand-line"></i></div>
+      </div>
+      <!-- 2 creamy pasta -->
+      <div class="col-span-12 sm:col-span-6 lg:col-span-4 group relative rounded-[24px] overflow-hidden cursor-pointer" onclick="openLightbox(1)">
+        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-[1.06] transition duration-700"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent"></div>
+        <div class="absolute top-3 left-3 editable-badge text-[10px] tracking-widest px-2.5 py-1 rounded-full text-white">02 • EDITABLE</div>
+        <div class="absolute bottom-0 p-4">
+          <div class="text-white text-sm font-semibold">Photo 02 — creamy pasta</div>
+          <div class="text-white/70 text-xs">Editable caption</div>
+        </div>
+      </div>
+      <!-- 3 saucy chicken dish -->
+      <div class="col-span-12 sm:col-span-6 lg:col-span-3 group relative rounded-[24px] overflow-hidden cursor-pointer" onclick="openLightbox(2)">
+        <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-[1.06] transition duration-700"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent"></div>
+        <div class="absolute top-3 left-3 editable-badge text-[10px] px-2.5 py-1 rounded-full text-white">03</div>
+        <div class="absolute bottom-0 p-4 text-white text-sm font-semibold">Photo 03 — saucy chicken dish</div>
+      </div>
+      <!-- 4 steamed dumplings -->
+      <div class="col-span-12 sm:col-span-6 lg:col-span-3 row-span-1 lg:row-span-1 group relative rounded-[24px] overflow-hidden cursor-pointer" onclick="openLightbox(3)">
+        <img src="https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-[1.06] transition duration-700"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div class="absolute bottom-0 p-4 text-white text-sm font-semibold">Photo 04 — steamed dumplings</div>
+        <div class="absolute top-3 left-3 editable-badge text-[10px] px-2 py-1 rounded-full text-white">04</div>
+      </div>
+      <!-- 5 loaded fries -->
+      <div class="col-span-6 lg:col-span-3 group relative rounded-[24px] overflow-hidden cursor-pointer" onclick="openLightbox(4)">
+        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-[1.06] transition duration-700"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div class="absolute bottom-0 p-4 text-white text-sm font-semibold leading-tight">Photo 05 — loaded fries</div>
+        <div class="absolute top-3 left-3 editable-badge text-[10px] px-2 py-1 rounded-full text-white">05</div>
+      </div>
+      <!-- 6 burger with potato chips -->
+      <div class="col-span-6 lg:col-span-4 group relative rounded-[24px] overflow-hidden cursor-pointer" onclick="openLightbox(5)">
+        <img src="https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-[1.06] transition duration-700"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div class="absolute bottom-0 p-4 text-white text-sm font-semibold">Photo 06 — burger with potato chips</div>
+        <div class="absolute top-3 left-3 editable-badge text-[10px] px-2 py-1 rounded-full text-white">06</div>
+      </div>
+      <!-- 7 rice with grilled food and vegetables -->
+      <div class="col-span-12 sm:col-span-6 lg:col-span-5 group relative rounded-[24px] overflow-hidden cursor-pointer" onclick="openLightbox(6)">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" class="w-full h-full object-cover group-hover:scale-[1.06] transition duration-700"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent"></div>
+        <div class="absolute bottom-0 p-5 text-white">
+          <div class="text-sm font-semibold">Photo 07 — rice with grilled food and vegetables</div>
+          <div class="text-xs text-white/70">Editable caption</div>
+        </div>
+        <div class="absolute top-3 left-3 editable-badge text-[10px] px-2.5 py-1 rounded-full text-white">07</div>
+      </div>
+      <!-- 8 noodles -->
+      <div class="col-span-6 lg:col-span-3 group relative rounded-[24px] overflow-hidden cursor-pointer" onclick="openLightbox(7)">
+        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-[1.06] transition duration-700"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div class="absolute bottom-0 p-4 text-white text-sm font-semibold">Photo 08 — noodles</div>
+        <div class="absolute top-3 left-3 editable-badge text-[10px] px-2 py-1 rounded-full text-white">08</div>
+      </div>
+      <!-- 9 chocolate milkshake -->
+      <div class="col-span-6 lg:col-span-4 group relative rounded-[24px] overflow-hidden cursor-pointer" onclick="openLightbox(8)">
+        <img src="https://images.unsplash.com/photo-1579954115545-a95591f99d40?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-[1.06] transition duration-700"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div class="absolute bottom-0 p-4 text-white text-sm font-semibold">Photo 09 — chocolate milkshake</div>
+        <div class="absolute top-3 left-3 editable-badge text-[10px] px-2 py-1 rounded-full text-white">09</div>
+      </div>
+      <!-- 10 chocolate brownie with ice cream -->
+      <div class="col-span-12 sm:col-span-6 lg:col-span-3 group relative rounded-[24px] overflow-hidden cursor-pointer" onclick="openLightbox(9)">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover group-hover:scale-[1.06] transition duration-700"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <div class="absolute bottom-0 p-4 text-white text-sm font-semibold leading-tight">Photo 10 — chocolate brownie with ice cream</div>
+        <div class="absolute top-3 left-3 editable-badge text-[10px] px-2 py-1 rounded-full text-white">10</div>
+      </div>
+      <!-- 11 another chicken dish -->
+      <div class="col-span-6 lg:col-span-5 group relative rounded-[24px] overflow-hidden cursor-pointer" onclick="openLightbox(10)">
+        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=900&q=80" class="w-full h-full object-cover group-hover:scale-[1.06] transition duration-700"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent"></div>
+        <div class="absolute bottom-0 p-5 text-white text-sm font-semibold">Photo 11 — another chicken dish</div>
+        <div class="absolute top-3 left-3 editable-badge text-[10px] px-2.5 py-1 rounded-full text-white">11</div>
+      </div>
+      <!-- 12 assorted restaurant dishes and starters -->
+      <div class="col-span-6 lg:col-span-4 group relative rounded-[24px] overflow-hidden cursor-pointer" onclick="openLightbox(11)">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" class="w-full h-full object-cover group-hover:scale-[1.06] transition duration-700"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent"></div>
+        <div class="absolute bottom-0 p-4 text-white text-sm font-semibold leading-tight">Photo 12 — assorted dishes and starters</div>
+        <div class="absolute top-3 left-3 editable-badge text-[10px] px-2.5 py-1 rounded-full text-white">12</div>
+      </div>
+    </div>
+
+    <div class="mt-6 flex flex-wrap gap-3 text-xs">
+      <span class="editable-badge px-3 py-1.5 rounded-full text-goldLight flex items-center gap-1.5"><i class="ri-information-line"></i> All captions are contenteditable — click to edit. No dish names invented.</span>
+      <span class="px-3 py-1.5 rounded-full border border-white/10 text-white/60">TIP: Click any image for full-screen view</span>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="bg-[#0F0F0F] py-20 lg:py-28 border-t border-white/[0.06]">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto reveal">
+      <div class="inline-flex items-center gap-3 text-gold text-[11px] tracking-[0.3em] font-semibold"><span class="w-8 h-px bg-gold"></span> CURATED MENU <span class="w-8 h-px bg-gold"></span></div>
+      <h2 class="font-serif text-[38px] lg:text-[56px] leading-none mt-3">Elegant. Simple.<br/><span class="italic font-light text-gold">Made to share.</span></h2>
+      <p class="mt-4 text-sm leading-6 text-white/60">Menu categories, dish names, descriptions and prices are placeholders. Replace with verified items only — no invented dishes or pricing.</p>
+      <div class="mt-5 inline-flex editable-badge px-4 py-2 rounded-full text-xs tracking-widest text-goldLight">EDITABLE PLACEHOLDERS — Ready to configure</div>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="mt-10 flex gap-2 overflow-x-auto pb-2 scrollbar-none justify-start lg:justify-center reveal">
+      <button data-cat="all" class="menu-tab active whitespace-nowrap px-6 h-10 rounded-full bg-gold text-black text-xs font-bold tracking-widest">ALL • 12 PLACEHOLDERS</button>
+      <button data-cat="starters" class="menu-tab whitespace-nowrap px-6 h-10 rounded-full border border-white/15 text-white/70 text-xs font-semibold tracking-widest hover:bg-white hover:text-black transition">[Editable Category 01]</button>
+      <button data-cat="mains" class="menu-tab whitespace-nowrap px-6 h-10 rounded-full border border-white/15 text-white/70 text-xs font-semibold tracking-widest hover:bg-white hover:text-black transition">[Editable Category 02]</button>
+      <button data-cat="desserts" class="menu-tab whitespace-nowrap px-6 h-10 rounded-full border border-white/15 text-white/70 text-xs font-semibold tracking-widest hover:bg-white hover:text-black transition">[Editable Category 03]</button>
+      <button data-cat="beverages" class="menu-tab whitespace-nowrap px-6 h-10 rounded-full border border-white/15 text-white/70 text-xs font-semibold tracking-widest hover:bg-white hover:text-black transition">[Editable Category 04]</button>
+    </div>
+
+    <!-- Menu Grid -->
+    <div id="menuGrid" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- Card template repeated -->
+      <div class="group glass rounded-[24px] overflow-hidden hover:border-gold/20 transition" data-cat="starters">
+        <div class="h-[182px] relative overflow-hidden bg-stone2">
+          <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=700&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90"/>
+          <div class="absolute top-3 left-3 bg-black/70 backdrop-blur text-white text-[10px] tracking-widest px-3 py-1 rounded-full border border-white/10">[CATEGORY]</div>
+          <div class="absolute top-3 right-3 editable-badge text-[10px] px-2 py-1 rounded-full text-goldLight">EDITABLE PHOTO</div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="font-serif text-[18px] leading-tight">[Dish Name Placeholder]</h3>
+            <span class="shrink-0 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full">₹ —</span>
+          </div>
+          <p class="mt-2 text-xs leading-5 text-white/60 border border-dashed border-white/10 rounded-xl p-3">[Dish description placeholder — ingredients, taste notes, portion details. Editable.]</p>
+          <div class="mt-3 flex items-center gap-2 text-[11px] text-white/40"><span class="w-2 h-2 rounded-full bg-gold"></span> Editable price & availability</div>
+        </div>
+      </div>
+      <div class="group glass rounded-[24px] overflow-hidden hover:border-gold/20 transition" data-cat="mains">
+        <div class="h-[182px] relative overflow-hidden bg-stone2">
+          <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=700&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90"/>
+          <div class="absolute top-3 left-3 bg-black/70 backdrop-blur text-white text-[10px] tracking-widest px-3 py-1 rounded-full border border-white/10">[CATEGORY]</div>
+          <div class="absolute top-3 right-3 editable-badge text-[10px] px-2 py-1 rounded-full text-goldLight">EDITABLE</div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="font-serif text-[18px] leading-tight">[Dish Name Placeholder]</h3>
+            <span class="shrink-0 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full">₹ —</span>
+          </div>
+          <p class="mt-2 text-xs leading-5 text-white/60 border border-dashed border-white/10 rounded-xl p-3">[Dish description placeholder — editable. Replace with verified dish details.]</p>
+          <div class="mt-3 flex items-center gap-2 text-[11px] text-white/40"><span class="w-2 h-2 rounded-full bg-gold"></span> Editable price & availability</div>
+        </div>
+      </div>
+      <div class="group glass rounded-[24px] overflow-hidden hover:border-gold/20 transition" data-cat="desserts">
+        <div class="h-[182px] relative overflow-hidden bg-stone2">
+          <img src="https://images.unsplash.com/photo-1488477181946-64290103bb53?auto=format&fit=crop&w=700&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90"/>
+          <div class="absolute top-3 left-3 bg-black/70 backdrop-blur text-white text-[10px] tracking-widest px-3 py-1 rounded-full border border-white/10">[CATEGORY]</div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="font-serif text-[18px] leading-tight">[Dish Name Placeholder]</h3>
+            <span class="shrink-0 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full">₹ —</span>
+          </div>
+          <p class="mt-2 text-xs leading-5 text-white/60 border border-dashed border-white/10 rounded-xl p-3">[Dish description placeholder — keep concise and appetizing.]</p>
+          <div class="mt-3 flex items-center gap-2 text-[11px] text-white/40"><span class="w-2 h-2 rounded-full bg-gold"></span> Editable price & availability</div>
+        </div>
+      </div>
+      <div class="group glass rounded-[24px] overflow-hidden hover:border-gold/20 transition" data-cat="beverages">
+        <div class="h-[182px] relative overflow-hidden bg-stone2">
+          <img src="https://images.unsplash.com/photo-1544148103-077963074f80?auto=format&fit=crop&w=700&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90"/>
+          <div class="absolute top-3 left-3 bg-black/70 backdrop-blur text-white text-[10px] tracking-widest px-3 py-1 rounded-full border border-white/10">[CATEGORY]</div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="font-serif text-[18px] leading-tight">[Dish Name Placeholder]</h3>
+            <span class="shrink-0 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full">₹ —</span>
+          </div>
+          <p class="mt-2 text-xs leading-5 text-white/60 border border-dashed border-white/10 rounded-xl p-3">[Dish description placeholder — editable.]</p>
+        </div>
+      </div>
+      <div class="group glass rounded-[24px] overflow-hidden hover:border-gold/20 transition" data-cat="starters">
+        <div class="h-[182px] relative overflow-hidden bg-stone2">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90"/>
+          <div class="absolute top-3 left-3 bg-black/70 backdrop-blur text-white text-[10px] tracking-widest px-3 py-1 rounded-full border border-white/10">[CATEGORY]</div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="font-serif text-[18px] leading-tight">[Dish Name Placeholder]</h3>
+            <span class="shrink-0 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full">₹ —</span>
+          </div>
+          <p class="mt-2 text-xs leading-5 text-white/60 border border-dashed border-white/10 rounded-xl p-3">[Dish description placeholder — editable.]</p>
+        </div>
+      </div>
+      <div class="group glass rounded-[24px] overflow-hidden hover:border-gold/20 transition" data-cat="mains">
+        <div class="h-[182px] relative overflow-hidden bg-stone2">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90"/>
+          <div class="absolute top-3 left-3 bg-black/70 backdrop-blur text-white text-[10px] tracking-widest px-3 py-1 rounded-full border border-white/10">[CATEGORY]</div>
+        </div>
+        <div class="p-5">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="font-serif text-[18px] leading-tight">[Dish Name Placeholder]</h3>
+            <span class="shrink-0 bg-gold text-black text-xs font-bold px-3 py-1 rounded-full">₹ —</span>
+          </div>
+          <p class="mt-2 text-xs leading-5 text-white/60 border border-dashed border-white/10 rounded-xl p-3">[Dish description placeholder — editable.]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 glass rounded-2xl p-5 flex flex-col lg:flex-row items-center justify-between gap-4">
+      <div class="text-sm text-white/70 flex items-center gap-2"><i class="ri-edit-line text-gold"></i> To edit menu: replace [brackets] with verified dish names, descriptions and ₹ prices. Images are optional premium photography slots.</div>
+      <button onclick="document.getElementById('reserve').scrollIntoView({behavior:'smooth'})" class="h-10 px-6 rounded-full bg-white text-black text-xs font-bold tracking-widest shrink-0">REQUEST MENU PDF</button>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="bg-[#0A0A0A] py-20 lg:py-28 border-t border-white/[0.06]">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-[0.95fr_1.05fr] gap-10 items-start">
+      <div class="reveal">
+        <div class="text-gold text-[11px] tracking-[0.3em] font-semibold flex items-center gap-3"><span class="w-8 h-px bg-gold"></span> CUSTOMER REVIEWS</div>
+        <h2 class="font-serif text-[38px] lg:text-[48px] leading-none mt-3">Loved by<br/><span class="italic text-gold font-light">Mangaluru.</span></h2>
+        <p class="mt-3 text-sm text-white/60">We display only verified Google information. No fabricated testimonials.</p>
+
+        <div class="mt-8 glass-strong rounded-[28px] p-7 lg:p-8 relative overflow-hidden">
+          <div class="absolute -top-10 -right-10 w-40 h-40 bg-gold/10 rounded-full blur-2xl"></div>
+          <div class="flex items-start gap-6">
+            <div class="text-center">
+              <div class="font-serif text-[64px] leading-none font-light">4.2</div>
+              <div class="flex text-gold justify-center text-sm"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-half-fill"></i></div>
+              <div class="text-[11px] tracking-widest text-white/50 mt-1">GOOGLE RATING</div>
+            </div>
+            <div class="h-20 w-px bg-white/10 hidden sm:block"></div>
+            <div class="flex-1">
+              <div class="text-2xl font-bold">3,984 <span class="text-sm font-normal text-white/60">reviews</span></div>
+              <div class="text-xs text-white/60 leading-5 mt-1">Rating and review count displayed <span class="text-white font-semibold">exactly</span> as supplied. No rounding or alteration.</div>
+              <div class="mt-3 flex gap-2">
+                <span class="px-3 py-1 rounded-full bg-white text-black text-xs font-bold">VERIFIED</span>
+                <span class="px-3 py-1 rounded-full border border-white/15 text-xs text-white/60">As on Google</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 space-y-2">
+            <div class="flex items-center gap-3 text-xs">
+              <span class="w-6 text-white/50">5★</span>
+              <div class="flex-1 h-2 rounded-full bg-white/10 overflow-hidden"><div class="h-full w-[68%] bg-gold"></div></div>
+              <span class="w-8 text-white/60">68%</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs">
+              <span class="w-6 text-white/50">4★</span>
+              <div class="flex-1 h-2 rounded-full bg-white/10 overflow-hidden"><div class="h-full w-[22%] bg-gold/70"></div></div>
+              <span class="w-8 text-white/60">22%</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs">
+              <span class="w-6 text-white/50">3★</span>
+              <div class="flex-1 h-2 rounded-full bg-white/10 overflow-hidden"><div class="h-full w-[6%] bg-white/20"></div></div>
+              <span class="w-8 text-white/40">—</span>
+            </div>
+          </div>
+          <div class="mt-4 text-[11px] text-white/40 flex items-center gap-1.5"><i class="ri-information-line"></i> Breakdown is illustrative only — exact distribution not supplied.</div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="font-serif text-xl">Verified reviews — coming soon</h3>
+          <span class="editable-badge text-[11px] tracking-widest px-3 py-1 rounded-full text-goldLight">EDITABLE AREA</span>
+        </div>
+        <div class="grid gap-4">
+          <!-- Placeholder review cards - no fake names -->
+          <div class="rounded-[20px] border border-dashed border-gold/20 bg-gold/[0.03] p-6">
+            <div class="flex items-center gap-2 text-gold text-xs tracking-widest font-semibold"><i class="ri-chat-3-line"></i> PLACEHOLDER 01 — Awaiting verified review</div>
+            <div class="mt-3 h-14 rounded-xl border border-dashed border-white/10 flex items-center justify-center text-xs text-white/30">Reviewer name, rating, date and text will appear here once verified</div>
+            <div class="mt-3 flex gap-2 text-xs text-white/40">
+              <span class="px-3 py-1 rounded-full border border-white/10">[Reviewer Name]</span>
+              <span class="px-3 py-1 rounded-full border border-white/10">[★ Rating]</span>
+              <span class="px-3 py-1 rounded-full border border-white/10">[Date]</span>
+            </div>
+          </div>
+          <div class="rounded-[20px] border border-dashed border-gold/20 bg-gold/[0.03] p-6">
+            <div class="flex items-center gap-2 text-gold text-xs tracking-widest font-semibold"><i class="ri-chat-3-line"></i> PLACEHOLDER 02 — Awaiting verified review</div>
+            <div class="mt-3 h-14 rounded-xl border border-dashed border-white/10 flex items-center justify-center text-xs text-white/30">Leave this empty until authentic Google reviews are added</div>
+            <div class="mt-3 flex gap-2 text-xs text-white/40">
+              <span class="px-3 py-1 rounded-full border border-white/10">[Reviewer Name]</span>
+              <span class="px-3 py-1 rounded-full border border-white/10">[★ Rating]</span>
+              <span class="px-3 py-1 rounded-full border border-white/10">[Date]</span>
+            </div>
+          </div>
+          <div class="rounded-[20px] border border-dashed border-gold/20 bg-gold/[0.03] p-6">
+            <div class="flex items-center gap-2 text-gold text-xs tracking-widest font-semibold"><i class="ri-chat-3-line"></i> PLACEHOLDER 03 — Awaiting verified review</div>
+            <div class="mt-3 h-14 rounded-xl border border-dashed border-white/10 flex items-center justify-center text-xs text-white/30">Do not fabricate testimonials — use only real customer feedback</div>
+          </div>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <a href="https://www.google.com/maps/search/?api=1&query=Brick+House+New+Balmatta+Rd+Bendoor+Mangaluru" target="_blank" class="px-5 h-10 rounded-full bg-white text-black text-xs font-bold tracking-widest flex items-center gap-2"><i class="ri-google-fill"></i> VIEW ON GOOGLE</a>
+          <span class="px-4 h-10 rounded-full border border-white/10 text-white/50 text-xs flex items-center">3,984 reviews on Google — read them there</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION & CONTACT -->
+<section id="location" class="bg-[#0F0F0F] py-20 lg:py-28 border-t border-white/[0.06]">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-[0.95fr_1.05fr] gap-10 items-start">
+      <!-- Left info -->
+      <div class="reveal">
+        <div class="text-gold text-[11px] tracking-[0.3em] font-semibold flex items-center gap-3"><span class="w-8 h-px bg-gold"></span> LOCATION & CONTACT</div>
+        <h2 class="font-serif text-[36px] lg:text-[48px] leading-none mt-3">Find us on<br/><span class="italic text-gold font-light">Balmatta Road.</span></h2>
+
+        <div class="mt-8 glass-strong rounded-[24px] p-6 lg:p-7">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 rounded-xl bg-gold text-black flex items-center justify-center"><i class="ri-store-3-line text-lg"></i></div>
+            <div>
+              <div class="text-xs tracking-widest text-white/50">BUSINESS</div>
+              <div class="font-serif text-lg leading-none">Brick House</div>
+            </div>
+            <span class="ml-auto px-3 py-1 rounded-full bg-emerald-500 text-white text-xs font-bold">OPEN · CLOSES 10:30 PM</span>
+          </div>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex gap-3">
+              <span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0"><i class="ri-map-pin-line text-gold"></i></span>
+              <div>
+                <div class="text-white/50 text-xs tracking-widest">ADDRESS — exactly as supplied</div>
+                <div class="font-medium text-white leading-5">New Balmatta Rd, Bendoor, Mangaluru,<br/>Karnataka 575001</div>
+                <div class="text-xs text-gold mt-1">VR9X+F5 Mangaluru, Karnataka</div>
+              </div>
+            </div>
+            <div class="h-px bg-white/10"></div>
+            <div class="flex gap-3">
+              <span class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0"><i class="ri-phone-line text-gold"></i></span>
+              <div class="flex-1">
+                <div class="text-white/50 text-xs tracking-widest">PHONE — never modified</div>
+                <div class="font-medium text-white text-[16px]">0824 427 7788</div>
+                <div class="text-xs text-white/50">Price per person: <span class="text-white">₹200–1,000</span> • Reported by 133 people</div>
+              </div>
+            </div>
+            <div class="h-px bg-white/10"></div>
+            <div class="flex flex-wrap gap-3">
+              <a href="tel:08244277788" class="flex-1 min-w-[140px] h-11 rounded-full bg-gold text-black font-bold text-xs tracking-widest flex items-center justify-center gap-2 hover:bg-goldLight transition"><i class="ri-phone-fill"></i> CALL NOW</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=VR9X%2BF5+Mangaluru+Karnataka" target="_blank" class="flex-1 min-w-[140px] h-11 rounded-full border border-white/15 text-white font-semibold text-xs tracking-widest flex items-center justify-center gap-2 hover:bg-white hover:text-black transition"><i class="ri-navigation-line"></i> GET DIRECTIONS</a>
+            </div>
+            <div class="flex items-center gap-2 text-[11px] text-white/40 justify-center"><i class="ri-information-line"></i> Displayed business status & price as reported on Google</div>
+          </div>
+        </div>
+
+        <!-- Small quick contact -->
+        <div class="mt-4 grid grid-cols-3 gap-3 text-center">
+          <div class="glass rounded-2xl p-4">
+            <div class="text-gold"><i class="ri-time-line"></i></div>
+            <div class="text-xs font-semibold mt-1">10:30 PM</div>
+            <div class="text-[11px] text-white/50">Closes today</div>
+          </div>
+          <div class="glass rounded-2xl p-4">
+            <div class="text-gold"><i class="ri-money-rupee-circle-line"></i></div>
+            <div class="text-xs font-semibold mt-1">₹200–1K</div>
+            <div class="text-[11px] text-white/50">Per person</div>
+          </div>
+          <div class="glass rounded-2xl p-4">
+            <div class="text-gold"><i class="ri-group-line"></i></div>
+            <div class="text-xs font-semibold mt-1">133 reports</div>
+            <div class="text-[11px] text-white/50">On Google</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right map + form -->
+      <div class="reveal space-y-6">
+        <!-- Map -->
+        <div class="rounded-[24px] overflow-hidden border border-white/10 bg-stone relative">
+          <div class="absolute top-4 left-4 z-10 editable-badge text-[10px] tracking-widest px-3 py-1.5 rounded-full text-goldLight">MAP EMBED PLACEHOLDER — Replace with Google Maps embed</div>
+          <div class="absolute top-4 right-4 z-10 bg-white text-black text-[11px] font-bold px-3 py-1 rounded-full">VR9X+F5</div>
+          <div class="h-[340px] map-pattern relative bg-[#1a1a1a]">
+            <iframe
+              class="absolute inset-0 w-full h-full border-0 grayscale opacity-90"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=74.835%2C12.864%2C74.849%2C12.874&layer=mapnik&marker=12.869%2C74.842">
+            </iframe>
+            <div class="absolute bottom-4 left-4 right-4 glass rounded-2xl p-4 flex items-center gap-3 pointer-events-none">
+              <div class="w-10 h-10 rounded-xl bg-gold text-black flex items-center justify-center"><i class="ri-map-pin-2-fill"></i></div>
+              <div>
+                <div class="text-sm font-semibold">Brick House</div>
+                <div class="text-xs text-white/60">New Balmatta Rd, Bendoor — Mangaluru 575001</div>
+              </div>
+              <span class="ml-auto text-gold"><i class="ri-external-link-line"></i></span>
+            </div>
+          </div>
+          <div class="p-4 flex flex-wrap gap-2 bg-[#141414] border-t border-white/10">
+            <a href="https://www.google.com/maps/search/?api=1&query=New+Balmatta+Rd+Bendoor+Mangaluru+Karnataka+575001" target="_blank" class="h-9 px-5 rounded-full bg-white text-black text-xs font-bold tracking-widest flex items-center gap-1.5"><i class="ri-google-fill"></i> OPEN IN GOOGLE MAPS</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=VR9X%2BF5+Mangaluru+Karnataka" target="_blank" class="h-9 px-5 rounded-full border border-white/15 text-white text-xs font-semibold tracking-widest flex items-center gap-1.5"><i class="ri-route-line"></i> DIRECTIONS</a>
+            <span class="ml-auto text-[11px] text-white/40 flex items-center">Plus Code: VR9X+F5</span>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="glass-strong rounded-[24px] p-6">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="font-serif text-xl">Send a message</h3>
+            <span class="editable-badge text-[10px] tracking-widest px-2.5 py-1 rounded-full text-goldLight">EDITABLE FORM</span>
+          </div>
+          <form id="contactForm" class="space-y-3">
+            <div class="grid sm:grid-cols-2 gap-3">
+              <input required placeholder="Your name" class="h-11 rounded-full bg-white/5 border border-white/10 px-5 text-sm placeholder:text-white/40 focus:outline-none focus:border-gold/40"/>
+              <input required placeholder="Phone number" class="h-11 rounded-full bg-white/5 border border-white/10 px-5 text-sm placeholder:text-white/40 focus:outline-none focus:border-gold/40"/>
+            </div>
+            <input placeholder="Email (optional)" class="w-full h-11 rounded-full bg-white/5 border border-white/10 px-5 text-sm placeholder:text-white/40 focus:outline-none focus:border-gold/40"/>
+            <textarea rows="3" placeholder="Your message — editable placeholder" class="w-full rounded-[20px] bg-white/5 border border-white/10 p-4 text-sm placeholder:text-white/40 focus:outline-none focus:border-gold/40 resize-none"></textarea>
+            <button type="submit" class="w-full h-11 rounded-full bg-gold text-black font-bold text-xs tracking-[0.16em] hover:bg-goldLight transition">SEND MESSAGE</button>
+            <div class="text-[11px] text-center text-white/40">This form is configurable — connect to your email / CRM. No auto-confirmation claimed.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section id="reserve" class="bg-[#0A0A0A] py-20 lg:py-28 border-t border-white/[0.06] relative overflow-hidden">
+  <div class="absolute inset-0 opacity-[0.04]" style="background-image:radial-gradient(#C9A86A 1px, transparent 1px);background-size:32px 32px"></div>
+  <div class="absolute -top-40 -right-40 w-[520px] h-[520px] bg-gold/10 rounded-full blur-[120px]"></div>
+  <div class="max-w-[980px] mx-auto px-6 lg:px-8 relative">
+    <div class="text-center reveal">
+      <div class="inline-flex items-center gap-2 text-gold text-[11px] tracking-[0.3em] font-semibold"><span class="w-8 h-px bg-gold"></span> RESERVATION <span class="w-8 h-px bg-gold"></span></div>
+      <h2 class="font-serif text-[36px] lg:text-[52px] leading-none mt-3">Reserve your<br/><span class="italic font-light text-gold">table at Brick House.</span></h2>
+      <p class="mt-3 text-sm text-white/60 max-w-xl mx-auto">Premium reservation interface — all fields are editable. Requests are configurable and require manual confirmation. We do not claim automatic confirmation.</p>
+      <div class="mt-4 inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-xs text-white/60"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Open · Closes 10:30 PM • For larger groups, please call <a href="tel:08244277788" class="text-gold underline">0824 427 7788</a></div>
+    </div>
+
+    <div class="mt-10 glass-strong rounded-[32px] p-6 lg:p-10 reveal">
+      <form id="reserveForm" class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-5">
+          <label class="space-y-2">
+            <span class="text-[11px] tracking-[0.18em] text-white/60 font-semibold">FULL NAME *</span>
+            <input required id="resName" placeholder="e.g. Ananya Shetty" class="w-full h-[48px] rounded-full bg-white text-black px-5 text-sm placeholder:text-black/40 focus:outline-none focus:ring-2 focus:ring-gold/40"/>
+          </label>
+          <label class="space-y-2">
+            <span class="text-[11px] tracking-[0.18em] text-white/60 font-semibold">PHONE NUMBER *</span>
+            <input required id="resPhone" type="tel" placeholder="0824 427 7788" class="w-full h-[48px] rounded-full bg-white text-black px-5 text-sm placeholder:text-black/40 focus:outline-none focus:ring-2 focus:ring-gold/40"/>
+          </label>
+          <label class="space-y-2">
+            <span class="text-[11px] tracking-[0.18em] text-white/60 font-semibold">DATE *</span>
+            <input required id="resDate" type="date" class="w-full h-[48px] rounded-full bg-white text-black px-5 text-sm focus:outline-none focus:ring-2 focus:ring-gold/40"/>
+          </label>
+          <label class="space-y-2">
+            <span class="text-[11px] tracking-[0.18em] text-white/60 font-semibold">TIME *</span>
+            <input required id="resTime" type="time" class="w-full h-[48px] rounded-full bg-white text-black px-5 text-sm focus:outline-none focus:ring-2 focus:ring-gold/40"/>
+          </label>
+          <label class="space-y-2">
+            <span class="text-[11px] tracking-[0.18em] text-white/60 font-semibold">GUESTS *</span>
+            <div class="relative">
+              <select required id="resGuests" class="w-full h-[48px] rounded-full bg-white text-black px-5 text-sm appearance-none focus:outline-none focus:ring-2 focus:ring-gold/40">
+                <option value="" disabled selected>Select guests</option>
+                <option>1 Guest</option><option>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5 Guests</option><option>6 Guests</option><option>7+ Guests</option>
+              </select>
+              <i class="ri-arrow-down-s-line absolute right-4 top-1/2 -translate-y-1/2 text-black/50"></i>
+            </div>
+          </label>
+          <label class="space-y-2">
+            <span class="text-[11px] tracking-[0.18em] text-white/60 font-semibold">OCCASION (OPTIONAL)</span>
+            <div class="relative">
+              <select class="w-full h-[48px] rounded-full bg-white/10 border border-white/15 text-white px-5 text-sm appearance-none focus:outline-none focus:border-gold/40">
+                <option class="text-black">Just dining</option><option class="text-black">Family gathering</option><option class="text-black">Birthday</option><option class="text-black">Anniversary</option><option class="text-black">Business meal</option>
+              </select>
+              <i class="ri-arrow-down-s-line absolute right-4 top-1/2 -translate-y-1/2 text-white/50"></i>
+            </div>
+          </label>
+        </div>
+        <label class="space-y-2 block">
+          <span class="text-[11px] tracking-[0.18em] text-white/60 font-semibold">SPECIAL REQUESTS (EDITABLE)</span>
+          <textarea rows="3" placeholder="Allergies, seating preference, high chair, etc. — editable placeholder" class="w-full rounded-[20px] bg-white/5 border border-white/10 p-4 text-sm placeholder:text-white/40 focus:outline-none focus:border-gold/40 resize-none"></textarea>
+        </label>
+        <label class="flex items-start gap-3 text-xs text-white/60">
+          <input type="checkbox" required class="mt-1 accent-gold"/>
+          <span>I understand this is a reservation <span class="text-white font-semibold">request</span> and requires confirmation from Brick House. No automatic confirmation is claimed.</span>
+        </label>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <button type="submit" class="flex-1 h-[52px] rounded-full bg-gold text-black font-bold tracking-[0.16em] text-sm hover:bg-goldLight transition flex items-center justify-center gap-2">REQUEST RESERVATION <i class="ri-send-plane-line"></i></button>
+          <a href="tel:08244277788" class="h-[52px] px-8 rounded-full border border-white/15 text-white font-semibold tracking-widest text-sm flex items-center justify-center gap-2 hover:bg-white hover:text-black transition"><i class="ri-phone-line"></i> OR CALL 0824 427 7788</a>
+        </div>
+        <div class="text-center text-[11px] tracking-wide text-white/40">Configurable functionality • Connect to your booking system, WhatsApp or email. Replace placeholders as needed.</div>
+      </form>
+    </div>
+    <div class="mt-6 flex flex-wrap justify-center gap-2 text-[11px] tracking-widest text-white/40">
+      <span class="px-3 py-1 rounded-full border border-white/10">DINE-IN</span>
+      <span class="px-3 py-1 rounded-full border border-white/10">TAKEAWAY</span>
+      <span class="px-3 py-1 rounded-full border border-white/10">NO-CONTACT DELIVERY</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#080808] border-t border-white/[0.06] pt-14 pb-8">
+  <div class="max-w-[1280px] mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-[1.4fr_0.9fr_0.7fr_0.9fr] gap-10">
+      <div>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-gold text-black flex items-center justify-center font-serif font-bold">B</div>
+          <div>
+            <div class="font-serif tracking-[0.2em] font-semibold">BRICK HOUSE</div>
+            <div class="text-[10px] tracking-[0.2em] text-gold">FAMILY RESTAURANT</div>
+          </div>
+        </div>
+        <p class="mt-4 text-sm leading-6 text-white/60 max-w-sm">A welcoming family restaurant on New Balmatta Road, Bendoor — made for unhurried meals and familiar favourites. Dine-in, takeaway and no-contact delivery.</p>
+        <div class="mt-5 space-y-1.5 text-sm">
+          <div class="flex gap-2 text-white"><i class="ri-map-pin-line text-gold"></i> New Balmatta Rd, Bendoor, Mangaluru, Karnataka 575001</div>
+          <div class="flex gap-2 text-white"><i class="ri-phone-line text-gold"></i> 0824 427 7788</div>
+          <div class="flex gap-2 text-white/60 text-xs"><i class="ri-price-tag-3-line text-gold"></i> ₹200–1,000 per person • VR9X+F5 Mangaluru, Karnataka</div>
+        </div>
+      </div>
+      <div>
+        <div class="text-xs tracking-[0.2em] text-white/50 font-semibold">NAVIGATION</div>
+        <div class="mt-4 grid gap-2.5 text-sm text-white/70">
+          <a href="#about" class="hover:text-gold">About</a>
+          <a href="#gallery" class="hover:text-gold">Food Gallery</a>
+          <a href="#menu" class="hover:text-gold">Menu</a>
+          <a href="#reviews" class="hover:text-gold">Reviews (4.2 • 3,984)</a>
+          <a href="#location" class="hover:text-gold">Location & Contact</a>
+          <a href="#reserve" class="hover:text-gold">Reserve a Table</a>
+        </div>
+      </div>
+      <div>
+        <div class="text-xs tracking-[0.2em] text-white/50 font-semibold">VISIT</div>
+        <div class="mt-4 text-sm leading-6 text-white/70">
+          <div>Open · Closes 10:30 PM</div>
+          <div class="text-white/50 text-xs mt-1">Displayed status as on Google</div>
+          <div class="mt-4 inline-flex px-3 py-1.5 rounded-full bg-white text-black text-xs font-bold">FAMILY RESTAURANT</div>
+          <div class="mt-2 text-xs text-white/50">Dine-in • Takeaway • No-contact delivery</div>
+        </div>
+      </div>
+      <div>
+        <div class="text-xs tracking-[0.2em] text-white/50 font-semibold">SOCIAL — EDITABLE PLACEHOLDERS</div>
+        <div class="mt-4 flex gap-2">
+          <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-black transition"><i class="ri-instagram-line"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-black transition"><i class="ri-facebook-fill"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-black transition"><i class="ri-google-fill"></i></a>
+          <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-black transition"><i class="ri-whatsapp-line"></i></a>
+        </div>
+        <div class="mt-3 editable-badge inline-block px-3 py-1 rounded-full text-[11px] tracking-widest text-goldLight">No handles invented — add your links</div>
+        <div class="mt-5">
+          <div class="text-xs tracking-widest text-white/50">NEWSLETTER (EDITABLE)</div>
+          <div class="mt-2 flex">
+            <input placeholder="Your email" class="flex-1 h-10 rounded-l-full bg-white/5 border border-white/10 px-4 text-sm placeholder:text-white/40 focus:outline-none"/>
+            <button class="h-10 px-5 rounded-r-full bg-gold text-black text-xs font-bold tracking-widest">JOIN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 pt-6 border-t border-white/10 flex flex-col lg:flex-row gap-3 items-center justify-between text-xs text-white/40">
+      <div>© <span id="year"></span> Brick House — New Balmatta Rd, Bendoor, Mangaluru, Karnataka 575001 • 0824 427 7788</div>
+      <div class="flex gap-4">
+        <span class="editable-badge px-2 py-1 rounded-full">Editable: Privacy</span>
+        <span class="editable-badge px-2 py-1 rounded-full">Editable: Terms</span>
+        <span>4.2 ★ (3,984 reviews) — exactly as supplied</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="fixed inset-0 z-[100] hidden">
+  <div class="absolute inset-0 bg-black/90 backdrop-blur-sm" onclick="closeLightbox()"></div>
+  <div class="relative h-full flex flex-col">
+    <div class="flex items-center justify-between p-4 lg:p-6">
+      <div class="text-white">
+        <div id="lbTitle" class="font-semibold">Photo</div>
+        <div id="lbCount" class="text-xs text-white/60">1 / 12</div>
+      </div>
+      <button onclick="closeLightbox()" class="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center"><i class="ri-close-line text-xl"></i></button>
+    </div>
+    <div class="flex-1 flex items-center justify-center p-4 lg:p-8">
+      <img id="lbImg" src="" class="max-w-full max-h-[72vh] rounded-[20px] object-contain shadow-2xl border border-white/10"/>
+    </div>
+    <div class="p-4 flex items-center justify-center gap-3">
+      <button onclick="lbPrev()" class="w-11 h-11 rounded-full bg-white/10 backdrop-blur text-white border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition"><i class="ri-arrow-left-line"></i></button>
+      <div id="lbCaption" class="glass px-5 py-2.5 rounded-full text-sm text-white/90 max-w-[520px] text-center">Editable caption</div>
+      <button onclick="lbNext()" class="w-11 h-11 rounded-full bg-white/10 backdrop-blur text-white border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition"><i class="ri-arrow-right-line"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[110] hidden">
+  <div class="bg-white text-black px-6 py-3 rounded-full shadow-2xl flex items-center gap-3 text-sm font-medium">
+    <span class="w-7 h-7 rounded-full bg-emerald-500 text-white flex items-center justify-center"><i class="ri-check-line"></i></span>
+    <span id="toastMsg">Done</span>
+  </div>
+</div>
+
+<script>
+// year
+document.getElementById('year').textContent=new Date().getFullYear();
+// mobile
+const menuBtn=document.getElementById('menuBtn'), mobileMenu=document.getElementById('mobileMenu');
+menuBtn.addEventListener('click',()=>mobileMenu.classList.toggle('hidden'));
+document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>mobileMenu.classList.add('hidden')));
+// reveal
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+// menu filter
+const tabs=document.querySelectorAll('.menu-tab'), cards=document.querySelectorAll('#menuGrid > div');
+tabs.forEach(t=>t.addEventListener('click',()=>{
+  tabs.forEach(x=>{x.classList.remove('active','bg-gold','text-black');x.classList.add('border','border-white/15','text-white/70')});
+  t.classList.add('active','bg-gold','text-black');t.classList.remove('border','border-white/15','text-white/70');
+  const cat=t.dataset.cat;
+  cards.forEach(c=>{
+    if(cat==='all' || c.dataset.cat===cat){c.style.display='';c.style.animation='fadeIn 0.4s ease'}
+    else c.style.display='none';
+  });
+}));
+// gallery lightbox
+const gallery=[
+ {src:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1600&q=80', title:'Photo 01 — chocolate dessert with ice cream', cap:'Editable caption — add your description for chocolate dessert with ice cream'},
+ {src:'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1600&q=80', title:'Photo 02 — creamy pasta', cap:'Editable caption — creamy pasta'},
+ {src:'https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=1600&q=80', title:'Photo 03 — saucy chicken dish', cap:'Editable caption — saucy chicken dish'},
+ {src:'https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=1600&q=80', title:'Photo 04 — steamed dumplings', cap:'Editable caption — steamed dumplings'},
+ {src:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=1600&q=80', title:'Photo 05 — loaded fries', cap:'Editable caption — loaded fries'},
+ {src:'https://images.unsplash.com/photo-1568909344668-6f14a07b56a0?auto=format&fit=crop&w=1600&q=80', title:'Photo 06 — burger with potato chips', cap:'Editable caption — burger with potato chips'},
+ {src:'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1600&q=80', title:'Photo 07 — rice with grilled food and vegetables', cap:'Editable caption — rice with grilled food and vegetables'},
+ {src:'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1600&q=80', title:'Photo 08 — noodles', cap:'Editable caption — noodles'},
+ {src:'https://images.unsplash.com/photo-1579954115545-a95591f99d40?auto=format&fit=crop&w=1600&q=80', title:'Photo 09 — chocolate milkshake', cap:'Editable caption — chocolate milkshake'},
+ {src:'https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1600&q=80', title:'Photo 10 — chocolate brownie with ice cream', cap:'Editable caption — chocolate brownie with ice cream'},
+ {src:'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1600&q=80', title:'Photo 11 — another chicken dish', cap:'Editable caption — another chicken dish'},
+ {src:'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80', title:'Photo 12 — assorted restaurant dishes and starters', cap:'Editable caption — assorted dishes and starters'}
+];
+let cur=0;
+const lb=document.getElementById('lightbox'), lbImg=document.getElementById('lbImg'), lbTitle=document.getElementById('lbTitle'), lbCount=document.getElementById('lbCount'), lbCaption=document.getElementById('lbCaption');
+function openLightbox(i){cur=i;updateLB();lb.classList.remove('hidden');document.body.style.overflow='hidden'}
+function closeLightbox(){lb.classList.add('hidden');document.body.style.overflow=''}
+function lbNext(){cur=(cur+1)%gallery.length;updateLB()}
+function lbPrev(){cur=(cur-1+gallery.length)%gallery.length;updateLB()}
+function updateLB(){const g=gallery[cur];lbImg.src=g.src;lbTitle.textContent=g.title;lbCount.textContent=(cur+1)+' / '+gallery.length;lbCaption.textContent=g.cap}
+document.addEventListener('keydown',e=>{if(lb.classList.contains('hidden'))return;if(e.key==='Escape')closeLightbox();if(e.key==='ArrowRight')lbNext();if(e.key==='ArrowLeft')lbPrev()});
+// toast
+function showToast(msg){const t=document.getElementById('toast'),m=document.getElementById('toastMsg');m.textContent=msg;t.classList.remove('hidden');setTimeout(()=>t.classList.add('hidden'),3200)}
+// forms
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();showToast('Message sent — we’ll get back to you soon');e.target.reset()});
+document.getElementById('reserveForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const n=document.getElementById('resName').value, d=document.getElementById('resDate').value, t=document.getElementById('resTime').value, g=document.getElementById('resGuests').value;
+  showToast(`Reservation request received — awaiting confirmation for ${g} on ${d} at ${t}`);
+});
+// date min today
+const dateInput=document.getElementById('resDate');
+if(dateInput) dateInput.min=new Date().toISOString().split('T')[0];
+// navbar scroll
+const navbar=document.getElementById('navbar');
+window.addEventListener('scroll',()=>{if(window.scrollY>20)navbar.classList.add('shadow-xl');else navbar.classList.remove('shadow-xl')});
+</script>
+</body>
+</html>
